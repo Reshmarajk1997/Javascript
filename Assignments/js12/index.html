@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const limit = parseInt(prompt("Enter the limit of Array"))
+        const array=[]
+        for(let i=0;i<limit;i++){
+            array[i]= parseInt(prompt("Enter Array Number : "+`${i+1}`))
+            }
+            document.writeln("Entered Array is : "+array+"<br>")
+            const sortedArray =array.sort((a,b)=>b-a)
+            alert("The sorted array is :"+sortedArray)
+            document.writeln("Sorted Array is : "+sortedArray+"<br>")
+    </script>
+    
+</body>
+</html>

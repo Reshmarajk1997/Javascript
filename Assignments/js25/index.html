@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var library = [ 
+    {
+        title: 'Bill Gates',
+        author: 'The Road Ahead',
+        readingStatus: true
+    },
+    {
+        title: 'Steve Jobs',
+        author: 'Walter Isaacson',
+        readingStatus: true
+    },
+    {
+        title: 'Mockingjay: The Final Book of The Hunger Games',
+        author: 'Suzanne Collins',
+        readingStatus: false
+    }
+];
+
+let a=[],b=[]
+
+library.map((val)=>{
+    if(val.readingStatus==true){
+        a.push(val)
+    }
+    else{
+        b.push(val)
+    }
+
+})
+console.log(a,b)
+document.writeln("The books need to be readed are :"+"<br>")
+if(a.length==0){
+    document.writeln("No Books are read. <br>")
+}
+else{
+    a.map((val)=>{
+        document.writeln(" Book Name: "+val.title +", Author Name: "+val.author+"<br>")
+
+    })
+}
+document.writeln("The books are unread :"+"<br>")
+if(b.length==0){
+        document.writeln("No More books to read")
+    }
+    else
+    b.map((val)=>{
+        {document.writeln(" Book Name: "+val.title +", Author Name: "+val.author+"<br>")}
+     })   
+   
+// for(let i=0;i<library.length;i++)
+// {
+//     if(library[i].readingStatus){
+//         a.push(library[i])
+        
+//     }
+//     else{
+//         b.push(library[i])
+//     }
+   
+// }
+
+// document.writeln("The books need to be readed are :"+"<br>")
+// if(a.length==0){
+//     document.writeln("No Books are read. <br>")
+// }
+// else{
+//     for( i=0;i<a.length;i++){
+//     document.writeln(" Book Name: "+a[i].title +", Author Name: "+a[i].author+"<br>")
+
+// }
+
+// }
+// document.writeln("<br>")
+
+// document.writeln("The books are unread :"+"<br>")
+
+// if(b.length==0){
+//         document.writeln("No More books to read")
+//     }
+//     else
+//     for(i=0;i<b.length;i++){
+    
+//         {document.writeln(" Book Name: "+b[i].title +", Author Name: "+b[i].author+"<br>")}
+// }
+   
+
+
+
+
+    </script>
+    
+</body>
+</html>

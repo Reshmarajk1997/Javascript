@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let re=[],a=[]
+         a = prompt("Enter the word")
+         document.writeln("Entered word is:"+a+"<br>")
+        let str = (a.toString()).split("")
+        for (let i=0;i<str.length;i++){
+            for(let j=(str.length-1)-i;j>=j && j>=0;j--){
+                re[j]=str[i]
+            }
+        }
+        console.log(re)
+        let sum=0
+        for( i=0;i<a.length;i++){
+            for(j=i;j<=i;j++){
+                if(a[i]==re[j]){
+                    sum++     
+                }
+            }
+        }
+        console.log(sum)
+        if(sum==a.length){
+            alert("Its a Palindrom")
+            document.writeln("Its a Palindrom")
+        }
+        else{
+            alert("Its not a palindrom")
+            document.writeln("Its not a Palindrom")
+        }
+    </script>
+    
+</body>
+</html>

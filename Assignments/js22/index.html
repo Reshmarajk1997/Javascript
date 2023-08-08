@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function main(){
+            let arr1=[],arr2=[];
+           let limit= getArray(arr1,arr2)
+        const result= addArray(arr1,arr2,limit)
+            displayArray(result,limit)
+        }
+        function getArray(arr1,arr2,limit){
+            limit = parseInt(prompt("Enter the size of the array"))
+            let i,j;
+            for(i=0;i<limit;i++){
+                arr1[i]=[]
+                {
+                    for(j=0;j<limit;j++){
+                        arr1[i][j] = parseInt(prompt("Enter the numbers of array1 for row"+`${i+1}`))
+                    }    
+                }
+            }
+            document.writeln("Ist array is:"+"<br>")
+            for(i=0;i<limit;i++){
+                {
+                    for(j=0;j<limit;j++){
+                        document.writeln(arr1[i][j])
+                    }
+                    document.writeln("<br>")    
+                }
+            }
+            document.writeln("<br>")
+            for(i=0;i<limit;i++){
+                arr2[i]=[]
+                {
+                    for(j=0;j<limit;j++){
+                        arr2[i][j] = parseInt(prompt("Enter the numbers of array2 for row"+`${i+1}`))
+                    }    
+                }
+            }
+            document.writeln("2nd array is:"+"<br>")
+            for(i=0;i<limit;i++){
+                {
+                    for(j=0;j<limit;j++){
+                        document.writeln(arr2[i][j])
+                    }
+                    document.writeln("<br>")    
+                }
+            }
+            document.writeln("<br>")
+            return limit
+            
+        }
+        function addArray(arr1,arr2,limit){
+            let re=[]
+             
+            for(let i=0;i<limit;i++){
+                re[i]=[]
+                {
+                    for(let j=0;j<limit;j++){
+                        re[i][j] = arr1[i][j]+arr2[i][j]
+                        
+                    }    
+                }
+            }
+            return re;
+
+        }    
+        function displayArray(result,limit){
+            document.writeln("sum of the above two array is:"+"<br>")
+            for(let i=0;i<limit;i++){
+                {
+                    for(let j=0;j<limit;j++){
+                        document.writeln(result[i][j])
+                    }
+                    document.writeln("<br>")    
+                }
+            }    
+        }
+        main()
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let writtenTest = parseInt(prompt("Enter written test mark"))
+        let labExam = parseInt(prompt("Enter lab exam mark"))
+        let assignment = parseInt(prompt("Enter assignments mark"))
+        let result = ((writtenTest*70)/100)+((labExam*20)/100)+((assignment*10)/100)
+        alert("Grade is :"+result)
+        document.writeln("written test : "+writtenTest+"<br>")
+        document.writeln("lab exam :" +labExam+"<br>")
+        document.writeln("assignments : "+assignment+"<br>")
+        document.writeln("Grade is : "+result)
+    </script>
+</body>
+</html>

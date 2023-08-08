@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let limit = parseInt(prompt("Enter the limit"))
+        const array1 =[],array2 =[];
+        for(let i=0;i<limit;i++)
+        {
+            // array1.push(parseInt(prompt("Enter the first array numbers")))
+                array1[i]=prompt("Enter the first array numbers")               
+        }
+        document.write("First array is : "+array1+"<br>")
+        
+        for(let i=0;i<limit;i++)
+        {
+            array2.push(parseInt(prompt("Enter the second array numbers")))           
+        }
+        document.write("second array is : "+array2+"<br>")
+        
+        for(i=0;i<limit;i++)
+        {           
+               let temp = array1[i];
+                array1[i] = array2[i];
+                array2[i]=temp
+         }
+         document.write("After swapping : <br>")
+         document.write("First array is : "+array1+"<br>")
+         document.write("second array is"+ array2+"<br>")
+         
+    </script>
+    
+</body>
+</html>

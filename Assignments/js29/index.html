@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let myArray=[1,2,3,4,5] 
+        
+        function callBack(myArray){
+            let sum=0
+            myArray.map((val)=>{ 
+                sum=sum+val
+            }          
+            )
+            if(sum%2==0){
+                console.log(true);
+             }
+             else{
+                console.log(false)  }
+     }      
+        function myFilter(b,callBack){
+            callBack(b)
+        }
+       myFilter(myArray,callBack)
+    </script>
+    
+</body>
+</html>

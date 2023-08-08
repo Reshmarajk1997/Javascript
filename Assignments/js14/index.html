@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr1=[],arr2=[],sum=[];
+        let a=parseInt(prompt("Enter array limit"))
+        for(let i=0;i<a;i++){
+           arr1[i]=[]
+            for(let j=0;j<a;j++){
+                arr1[i][j]=parseInt(prompt("Enter Ist array row"+`${i+1}`+":"))
+            }
+            // document.writeln("<br>")
+        }
+        document.writeln("1st array is:"+"<br>")
+        for(let i=0;i<a;i++){
+            for(let j=0;j<a;j++){
+                document.writeln(arr1[i][j]+" ")
+            }
+           document.writeln("<br>")  
+        }
+        for( i=0;i<a;i++){
+            arr2[i]=[]
+            for( j=0;j<a;j++){
+                arr2[i][j]=parseInt(prompt("Enter 2nd array row"+`${i+1}`+":"))
+                
+            }
+            // document.writeln("<br>")
+        }
+        document.writeln("2st array is:"+"<br>")
+        for(let i=0;i<a;i++){
+            for(let j=0;j<a;j++){
+                document.writeln(arr2[i][j]+" ")
+               }
+           document.writeln("<br>")
+         }
+        
+        for( i=0;i<a;i++){
+            sum[i]=[]
+            for( j=0;j<a;j++){
+                sum[i][j]=arr1[i][j]+arr2[i][j]
+                }
+            // document.writeln("<br>")
+        }
+        document.write("Sum of the above 2 array is :"+"<br>")
+        for(i=0;i<a;i++){
+            for(j=0;j<a;j++){
+                document.writeln(sum[i][j]+" ")
+            }
+            document.writeln("<br>")
+        }
+        
+        
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Enter your percentage below</h1>
+    <input type="number" id="percen" placeholder="Enter percentage">
+    <br><br>
+    <button onclick="check()">Click to Check</button>
+    <br>
+    <br>
+    <span id="fool"></span>
+    <script>
+        function check(){
+            const percen = parseFloat(document.getElementById("percen").value)
+             if(percen>=90&&percen<=100){              
+                alert("A Garde");
+                document.getElementById("fool").innerHTML = "A Garde";
+            }
+            else if(percen<=89 && percen>=80){
+                alert("B Grade")
+                document.getElementById("fool").innerHTML = "B Garde";
+            }
+            else if(percen<=79 && percen>=70){
+                alert("C Grade")
+                document.getElementById("fool").innerHTML = "C Garde";
+            }
+            else if(percen<=69 && percen>=60){
+                alert("D Grade")
+                document.getElementById("fool").innerHTML = "D Garde";
+            }
+            else if(percen<=59 && percen>=50){
+                alert("E Grade")
+                document.getElementById("fool").innerHTML = "E Garde";
+            }
+            else if(percen<50 && percen>=0){
+                alert("Failed")
+                document.getElementById("fool").innerHTML = "Failed";
+            }
+            else {
+              document.getElementById("fool").innerHTML = "FOOL!"           
+            }
+        }       
+    </script>
+
+    
+</body>
+</html>

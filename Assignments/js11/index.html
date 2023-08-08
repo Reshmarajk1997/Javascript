@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <h1>Enter the numbers of array one by one</h1>
+    <br>
+    <input type="number" id="arrayNumbers" name="placeHolder" placeholder="Enter Numbers">
+    <br><br>
+    <button onclick="check()">Click here</button>
+    <br>
+    <h1>The entered array is : 
+        <span  id="arrayEntered"></span> </h1>
+        <br>
+    <h1>The number of even numbers in the array is : 
+        <span  id="result"></span> </h1>
+    <script>
+        let limit = parseInt(prompt("Enter the limit"))
+        console.log(limit)
+        const array1 =[]
+        let l=0
+        function check(){  
+            if(l<limit)
+            {
+                 l++;
+                array1.push(arrayNumbers.value)  
+
+                if(l<limit){
+                    document.getElementById("arrayNumbers").value = " ";
+                }  
+                else{
+                    document.getElementById("arrayNumbers").value = " ";
+                    document.getElementsByName('placeHolder')[0].placeholder="Click again to see result"
+                }   
+            }
+            else {
+                document.getElementById("arrayEntered").innerHTML=array1
+                let sum=0,i,array=[]
+                array = array1.filter(Boolean);
+                console.log(array)
+                for(let i = 0; i < array.length; i++) {
+                    if( array[i]%2==0){
+                        sum++;
+                                }
+                            }
+                 if(sum==0){
+                    document.getElementById("result").innerHTML="There is 0 even numbers"
+                         }
+                else{
+                    document.getElementById("result").innerHTML= `${sum}`+"  number of even numbers "
+                    }
+                                }
+            }    
+            </script>
+    
+</body>
+</html>

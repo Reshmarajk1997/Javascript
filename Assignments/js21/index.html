@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let a=[],result=[],count=0;
+        let limit=parseInt(prompt("Enter the array limit"))
+        for(let i=0;i<limit;i++)
+        {
+            a[i]=parseInt(prompt("Enter the number "+(i+1)+":"))
+        }
+        document.writeln("Array is :"+a+"<br>")
+      
+        result = a.map((val,index,arr)=>{
+        if(index<limit-1)
+      { return val*(arr[index+1])}})
+        
+        // for(i=0;i<limit-1;i++)
+        // {
+        //     count++;
+            
+        //     result[i]=a[i]*a[i+1]
+            
+        // }
+        
+        document.writeln(result)
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let income = parseFloat(prompt("Enter Anual Income"))
+        document.writeln("Entered Income : "+income+"<br>")
+        
+        if(income<=250000){
+            alert("No Tax")
+            document.writeln("No Tax")
+        }
+        else if(income>250000&&income<=500000){
+            alert("Tax is :"+`${(income*5)/100}`)
+            document.writeln("Tax is: "+`${(income*5)/100}`)
+        }
+        else if(income>500000&&income<=1000000){
+            alert("Tax is :"+`${(income*20)/100}`)
+            document.writeln("Tax is: "+`${(income*20)/100}`)
+        }
+        else if(income>1000000&&income<=5000000){
+            alert("Tax is :"+`${(income*30)/100}`)
+            document.writeln("Tax is: "+`${(income*30)/100}`)
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS2</title>
+</head>
+<body>
+   <h2>Enter 2 numbers</h2>
+   <br>
+   <input type="number" id="firstNumber" placeholder="Integer Value">
+   <br>
+   <br>
+   <input type="number" id="secondNumber" placeholder="Float Value">
+   <br>
+    <br>
+    <button id="buttons">Click for result</button>
+    <h2>Sum of above 2 number is : <span id="result"></span> </h2>
+
+    <script>
+
+        // const a1 = [],b1 = []
+        let num1,num2;
+        const  firstNumber = document.getElementById("firstNumber")
+        const secondNumber = document.getElementById("secondNumber")
+        const result = document.getElementById("result")
+
+        firstNumber.addEventListener("input",function(){  
+        //    const a = (firstNumber.value)
+           
+        //     a1.push(a)
+        num1=(firstNumber.value)
+    })
+
+    secondNumber.addEventListener("input",function(){
+        // const b=(secondNumber.value)
+        // b1.push(b)
+        num2 = (secondNumber.value)
+    })
+        buttons.addEventListener("click",function(){
+            // const c=a1[a1.length-1]
+            // console.log(a1)
+            // const d=b1[b1.length-1]
+            // result.textContent=(parseInt(c)+parseFloat(d))
+            result.textContent=(parseInt(num1)+parseFloat(num2))
+
+        })
+
+    </script>
+</body>
+</html>

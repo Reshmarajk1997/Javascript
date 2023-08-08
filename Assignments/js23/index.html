@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        class Array
+        {       getArray(a,limit){
+                for(let i=0;i<limit;i++){              
+                    for(let j=0;j<limit;j++){                        
+                        a[i][j]=parseInt(prompt("Enter the number in row"+`${i+1}`))
+                }
+            }
+            return a;
+            }
+            displayArray(a,limit)
+            {   document.writeln("Array is :"+"<br>")
+                for(let i=0;i<limit;i++){
+                    for(let j=0;j<limit;j++){
+                       document.writeln(a[i][j]+" ")
+                }
+                document.writeln("<br>")
+            }
+            }
+            menu()
+        {   let limit=parseInt(prompt("Enter the size"))
+            document.writeln("Size of the Array is : "+limit+"<br>")
+            let a=[]
+            for(let i=0;i<limit;i++){                     
+                            a[i]=[]            
+            }
+          a= this.getArray(a,limit)          
+           this.displayArray(a,limit)
+        }
+        }
+       let obj=new Array()
+        obj.menu()
+    </script>
+</body>
+</html>

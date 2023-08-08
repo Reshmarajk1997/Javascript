@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+
+        class Area{
+            circle(r){
+                
+                return alert("Area of circle is:"+(2*Math.PI*r*r))
+            }
+            square(l){
+                return alert("Area of square:"+(l*l))
+            }
+            rectangle(l,w){
+                return alert("Area of rectangle :"+(l*w))
+            }
+            triangle(b,h){
+                return alert("Area of triangle :"+((b*h)/2))
+            }
+        }
+        class MyClass extends Area{
+            main(){
+                let choice = parseInt(prompt
+                ("Enter your choice:1 for circle; 2 for square; 3 for rectangle; 4 for triangle"))
+                switch(choice){
+                    case 1:
+                        this.circle()
+                        break;
+                    case 2: 
+                        let l=parseInt(prompt("Enter squre length"))  
+                        this.square(l) 
+                        break;
+                    case 3:
+                        let le=parseInt(prompt("Enter rectangle length"))  
+                        let width=parseInt(prompt("Enter rectangle length")) 
+                        this.rectangle(le,width) 
+                        break;
+                    case 4: 
+                        let base=parseInt(prompt("Enter triangle base"))  
+                        let height=parseInt(prompt("Enter triangle height ")) 
+                        this.triangle(base,height) 
+                        break;
+                }
+            }
+            circle(){
+                let r=parseInt(prompt(" Enter radius"))
+                super.circle(r)               
+            }
+        }
+        let obj=new MyClass()
+        obj.main()
+    
+    </script>
+</body>
+</html>

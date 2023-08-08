@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function main(){
+            let a=[];
+            getValues(a)
+            display(a)
+           
+            
+        }
+        
+        function getValues(a){
+            let limit=parseInt(prompt("Enter the limit of array"))
+            
+           for(let i=0;i<limit;i++){
+            a[i]=[]
+            for(let j=0;j<limit;j++){
+                a[i][j]=parseInt(prompt("Enter the numbers of array"))
+            }
+            
+        }
+        }
+       function display(a){
+       
+        console.log(a)
+       }
+       main();
+    </script>
+</body>
+</html>
