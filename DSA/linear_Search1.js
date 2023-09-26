@@ -1,5 +1,5 @@
 let arr = [1,2,3,1,4,5,1,8,1,9,7,1]
-let target = 10;
+let target = 1;
 let count = 1;
 let pos = [ ];
 for(let i=0;i<arr.length;i++){

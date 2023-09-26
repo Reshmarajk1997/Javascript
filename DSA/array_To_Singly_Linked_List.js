@@ -102,7 +102,8 @@ let list = new List(arr);
 //list.addNodeTail(999)
 //list.elementsByOrder();
 // list.elementsByReverseOrder();
-list.removeDuplicate();
+// list.removeDuplicate();
 list.print()
+list.addNodeTail(10)
  console.log(list);
 
